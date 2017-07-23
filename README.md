@@ -1,1 +1,1 @@
-Boilerplate for React Apps
+Bookstore Frontend
