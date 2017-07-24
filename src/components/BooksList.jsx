@@ -1,14 +1,17 @@
 import React from 'react';
+import {DropdownButton, MenuItem} from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
 const BooksList = () => (
     <div className="container">
         <table className="table">
             <thead>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Publication date</th>
-                <th></th>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Publication date</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -16,15 +19,9 @@ const BooksList = () => (
                     <td>Author</td>
                     <td>Publication</td>
                     <td>
-                        <div className="dropdown">
-                            <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                                <span className="fa fa-cog"/>
-                            </button>
-                            <ul className="dropdown-menu">
-                                <li><p>1</p></li>
-                                <li><p>2</p></li>
-                            </ul>
-                        </div>
+                        <DropdownButton id="1" title="Actions">
+                            <MenuItem id="1">Siema</MenuItem>
+                        </DropdownButton>
                     </td>
                 </tr>
             </tbody>
