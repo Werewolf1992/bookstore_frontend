@@ -21,10 +21,10 @@ const routes = (
                     </Switch>
                 )}/>
                 <Route exact path={paths.HISTORY_PAGE} render={() => isUser(<HistoryPage/>)}/>
-                <Route exact path={paths.LOGIN_PAGE} render={() => isNotUser(<LogInPage/>)}/>
             </Switch>
         </Navigation.Body>
         <Navigation.Footer/>
+        <Route exact path={paths.LOGIN_PAGE} render={() => isNotUser(<LogInPage/>)}/>
     </div>
 );
 

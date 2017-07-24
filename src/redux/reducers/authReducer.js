@@ -1,5 +1,5 @@
 const DEFAULT_STATE = {
-    token: true,
+    token: false,
 };
 
 const authReducer = (state = DEFAULT_STATE, action) => {
