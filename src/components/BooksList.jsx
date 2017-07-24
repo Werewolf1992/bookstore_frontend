@@ -5,30 +5,25 @@ const BooksList = () => (
     <div className="container">
         <table className="table">
             <thead>
-                <th>Name</th>
-                <th>Last name</th>
-                <th>Phone number</th>
-                <th>Workplace</th>
-                <th>Company</th>
-                <th>Email</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publication date</th>
                 <th></th>
             </thead>
             <tbody>
                 <tr>
-                    <td>name</td>
-                    <td>last_name</td>
-                    <td>phone_number</td>
-                    <td>work_place</td>
-                    <td>company</td>
-                    <td>e_mail</td>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Publication</td>
                     <td>
-                        <div className="btn-group" role="group" aria-label="...">
-                            <a className="btn btn-primary" href="">
-                                EDIT
-                            </a>
-                            <a className="btn btn-danger" href="">
-                                DELETE
-                            </a>
+                        <div className="dropdown">
+                            <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span className="fa fa-cog"/>
+                            </button>
+                            <ul className="dropdown-menu">
+                                <li><p>1</p></li>
+                                <li><p>2</p></li>
+                            </ul>
                         </div>
                     </td>
                 </tr>
