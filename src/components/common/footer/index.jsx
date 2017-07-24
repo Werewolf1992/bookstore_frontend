@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Footer = () => (
-    <div>FOOTER</div>
+    <footer className="footer">
+        <div className="container">
+            <p className="text-muted">Place sticky footer content here.</p>
+        </div>
+    </footer>
 );
 
 Footer.propTypes = {};

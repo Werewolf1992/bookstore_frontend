@@ -4,7 +4,7 @@ import Footer from './footer';
 import PropTypes from 'prop-types';
 
 
-const Wrapper = ({children}) => (
+const Navigation = ({children}) => (
     <div>
         <Header />
         {children}
@@ -12,8 +12,8 @@ const Wrapper = ({children}) => (
     </div>
 );
 
-Wrapper.propTypes = {
-    children: PropTypes.arrayOf(PropTypes.node).isRequired,
+Navigation.propTypes = {
+    children: PropTypes.node.isRequired,
 };
 
-export default Wrapper;
+export default Navigation;

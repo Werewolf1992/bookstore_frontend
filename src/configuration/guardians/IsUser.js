@@ -1,4 +1,3 @@
-// import {get, save} from '../../services/persist';
 import {store} from '../../index';
 import * as React from 'react';
 import {Redirect} from 'react-router';
