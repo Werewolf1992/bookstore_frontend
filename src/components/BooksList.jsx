@@ -3,11 +3,37 @@ import PropTypes from 'prop-types';
 
 const BooksList = () => (
     <div className="container">
-        <div className="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p className="lead">Use this document as a way to quickly start any new project.<br /> All you get is this
-                text and a mostly barebones HTML document.</p>
-        </div>
+        <table className="table">
+            <thead>
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Phone number</th>
+                <th>Workplace</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>name</td>
+                    <td>last_name</td>
+                    <td>phone_number</td>
+                    <td>work_place</td>
+                    <td>company</td>
+                    <td>e_mail</td>
+                    <td>
+                        <div className="btn-group" role="group" aria-label="...">
+                            <a className="btn btn-primary" href="">
+                                EDIT
+                            </a>
+                            <a className="btn btn-danger" href="">
+                                DELETE
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 );
 
